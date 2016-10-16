@@ -2,12 +2,6 @@
 
 ## Install
 
-Clone the repo:
-
-```
-$ git clone git@github.com:olebedev/go-starter-kit.git $GOPATH/src/github.com/<username>/<project>
-$ cd $GOPATH/src/github.com/<username>/<project>
-```
 Install JavaScript dependencies:
 
 ```

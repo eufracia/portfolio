@@ -1,7 +1,11 @@
+
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
-import { Link } from 'react-router';
-import { example, p, link } from './styles';
+
+import Intro from '../Intro';
+import Experience from '../Experience.js';
+import TechnicalSkills from '../TechnicalSkills.js';
+import Projects from '../Projects.js';
 
 export default class Homepage extends Component {
   /*eslint-disable */
@@ -21,14 +25,10 @@ export default class Homepage extends Component {
             content: 'Golang Isomorphic React/Hot Reloadable/Redux/Css-Modules Starter Kit'
           }
         ]} />
-      <h1 className={example}>
-        Hot Reloadable <br />
-        Golang + React + Redux + Css-Modules
-        <br />Isomorphic Starter Kit</h1>
-      <br />
-      <p className={p}>
-        Please take a look at <Link className={link} to='/docs'>usage</Link> page.
-      </p>
+        <Intro />
+        <Experience />
+        <TechnicalSkills />
+        <Projects />
     </div>;
   }
 
