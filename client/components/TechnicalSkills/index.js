@@ -1,6 +1,8 @@
 import React from 'react';
 import {render} from 'react-dom';
 
+import styles from './styles.css';
+
 const Skills = (props) => {
   return <div style={style.skillsContainer}>
     {props.skills.map((skill, i) => {
@@ -13,8 +15,8 @@ class TechnicalSkills extends React.Component {
   render(){
     return(
       <section>
-        <h1>Technical Skills</h1>
-        <div style={style.section}>
+        <h1 className={styles.title}>Technical Skills</h1>
+        <div className={styles.items}>
           <Skills skills={[
              "Microsoft Visual Studio 2013",
              "Android Development",
@@ -52,24 +54,6 @@ let style ={
     justifyContent: 'space-between',
     alignItems: 'flex-start',
     alignContent: 'flex-start',
-  },
-  softwareStack: {
-    flex: 1,
-    width: 40,
-    height: 150,
-    margin: 5,
-  },
-  langDatabase: {
-    flex: 1,
-    width: 40,
-    height: 150,
-    margin: 5,
-  },
-  framLibrary: {
-    flex: 1,
-    width: 40,
-    height: 150,
-    margin: 5,
   },
   section: {
     display: 'flex',
