@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 
 import Intro from '../Intro';
-import Experience from '../Experience.js';
-import TechnicalSkills from '../TechnicalSkills.js';
-import Projects from '../Projects.js';
+import Experience from '../Experience';
+import TechnicalSkills from '../TechnicalSkills';
+import Projects from '../Projects';
 
 export default class Homepage extends Component {
   /*eslint-disable */

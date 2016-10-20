@@ -7,6 +7,8 @@ export default class App extends Component {
     return <div>
       <Helmet title='Go + React + Redux = rocks!' />
       {this.props.children}
+      <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet" />
     </div>;
   }
 
