@@ -1,31 +1,33 @@
 import React from 'react';
 import {render} from 'react-dom';
 
+import styles from './styles.css';
+
 const Exp = (props) => {
   let duties = Array.isArray(props.jobDuties) && props.jobDuties.map((duty, i) => {
      return <p key={i}>•{duty}</p>
   });
   return <div>
-    <div style={style.box}>
-      <div style={style.jobTitle}>
+    <div>
+      <div>
         <h3>{props.jobTitle}</h3>
       </div>
-      <div style={style.jobPeriod}>
+      <div>
         <h3>{props.jobPeriod}</h3>
       </div>
     </div>
-    <div style={style.box}>
-      <div style={style.jobPlace}>
+    <div>
+      <div>
         <h4>{props.jobPlace}</h4>
       </div>
     </div>
-    <div style={style.box}>
-      <div style={style.jobDesc}>
+    <div>
+      <div>
         <p>{props.jobDesc}</p>
       </div>
     </div>
-    <div style={style.box}>
-      <div style={style.jobDuties}>
+    <div>
+      <div>
         {duties}
       </div>
     </div>
@@ -36,8 +38,8 @@ class Experience extends React.Component {
   render() {
     return(
       <section>
-        <h1>Work Experiences</h1>
-        <div>
+        <h1 className={styles.title}>Work Experiences</h1>
+        <div className={styles.container}>
           <Exp
             jobTitle="Sales Associate"
             jobPeriod="September 2016 - Current"
@@ -113,23 +115,18 @@ let style = {
   },
   jobTitle: {
     flex: 3,
-    fontSize: 20,
   },
   jobPeriod: {
     flex: 2,
-    fontSize: 15,
   },
   jobPlace: {
     flex: 1,
-    marginBottom: 30,
   },
   jobDesc: {
     flex: 1,
-    marginBottom: 30,
   },
   jobDuties: {
     flex: 1,
-    marginBottom: 30,
   },
 };
 
