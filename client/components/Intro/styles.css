@@ -1,4 +1,14 @@
-
-.root {
-    background-color: #000;
+.container {
+    margin-bottom: 30px;
+    line-height: 40px;
+}
+.name {
+    margin-bottom: 20px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+    font-weight: bold;
+}
+.description {
+    margin-bottom: 20px;
+    font-size: 20px;
 }
