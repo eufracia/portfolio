@@ -1,23 +1,24 @@
 import React from 'react';
 import {render} from 'react-dom';
 
+import styles from './styles.css';
 const Proj= (props) => {
   return <div>
-          <div style={style.box}>
-            <div style={style.projTitle}>
+          <div>
+            <div>
               <h3>{props.projTitle}</h3>
             </div>
-            <div style={style.projPeriod}>
+            <div>
               <h3>{props.projPeriod}</h3>
             </div>
           </div>
-          <div style={style.box}>
-            <div style={style.projDesc}>
+          <div>
+            <div>
               <p>{props.projDesc}</p>
             </div>
           </div>
-          <div style={style.box}>
-            <div style={style.projDuties}>
+          <div>
+            <div>
               <p>{props.projDuties}</p>
             </div>
           </div>
@@ -28,8 +29,8 @@ class Projects extends React.Component {
   render() {
     return(
         <section>
-          <h1>Projects Achievement</h1>
-            <div>
+          <h1 className={styles.title}>Projects Achievement</h1>
+            <div className={styles.items}>
               <Proj
                 projTitle="Capstone Project"
                 projPeriod="January - April 2016"
