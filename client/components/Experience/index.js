@@ -5,31 +5,17 @@ import styles from './styles.css';
 
 const Exp = (props) => {
   let duties = Array.isArray(props.jobDuties) && props.jobDuties.map((duty, i) => {
-     return <p key={i}>•{duty}</p>
+     return <p key={i} className={styles.dutyItem}>• {duty}</p>
   });
   return <div>
-    <div>
-      <div>
-        <h3>{props.jobTitle}</h3>
-      </div>
-      <div>
-        <h3>{props.jobPeriod}</h3>
-      </div>
+    <div className={styles.header}>
+      <h3>{props.jobTitle}</h3>
+      <p>{props.jobPeriod}</p>
     </div>
-    <div>
-      <div>
-        <h4>{props.jobPlace}</h4>
-      </div>
-    </div>
-    <div>
-      <div>
-        <p>{props.jobDesc}</p>
-      </div>
-    </div>
-    <div>
-      <div>
-        {duties}
-      </div>
+    <h4 className={styles.jobPlace}>{props.jobPlace}</h4>
+    <p className={styles.jobDesc}>{props.jobDesc}</p>
+    <div className={styles.listDuties}>
+      {duties}
     </div>
   </div>
 }
@@ -37,9 +23,9 @@ const Exp = (props) => {
 class Experience extends React.Component {
   render() {
     return(
-      <section>
+      <section className={styles.container}>
         <h1 className={styles.title}>Work Experiences</h1>
-        <div className={styles.container}>
+        <div>
           <Exp
             jobTitle="Sales Associate"
             jobPeriod="September 2016 - Current"
@@ -68,7 +54,7 @@ class Experience extends React.Component {
               'Responsible for a transaction in the cashier, e.g. process customer’s transaction in the till by credit card, debit, or cash.'
             ]} />
           <Exp
-            jobTitle="Help Desk(Lab Supervisor)"
+            jobTitle="Help Desk (Lab Supervisor)"
             jobPeriod="May - December 2015"
             jobPlace="NAITSA(Northern Alberta Institution of Technology Student Association Computer Commons, Edmonton, Alberta"
             jobDesc={`NAIT Computer Commons is a general lab room where students from all programs are welcome to use. They can have an access to this service by
