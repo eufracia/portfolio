@@ -4,22 +4,18 @@ import {render} from 'react-dom';
 import styles from './styles.css';
 const Proj= (props) => {
   return <div>
-          <div>
-            <div>
-              <h3>{props.projTitle}</h3>
-            </div>
-            <div>
-              <h3>{props.projPeriod}</h3>
-            </div>
+          <div className={styles.header}>
+             <h3>{props.projTitle}</h3>
+             <p>{props.projPeriod}</p>
           </div>
           <div>
-            <div>
+            <div className={styles.description}>
               <p>{props.projDesc}</p>
             </div>
           </div>
           <div>
             <div>
-              <p>{props.projDuties}</p>
+              <p className={styles.duties}>{props.projDuties}</p>
             </div>
           </div>
   </div>
@@ -28,9 +24,9 @@ const Proj= (props) => {
 class Projects extends React.Component {
   render() {
     return(
-        <section>
+        <section className={styles.container}>
           <h1 className={styles.title}>Projects Achievement</h1>
-            <div className={styles.items}>
+            <div>
               <Proj
                 projTitle="Capstone Project"
                 projPeriod="January - April 2016"

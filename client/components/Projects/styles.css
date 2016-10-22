@@ -1,11 +1,38 @@
-.items {
-    line-height: 40px;
-    font-size: 20px;
-
+.container {
+    width: 1000px;
+    padding: 40px;
+    margin-right: auto;
+    margin-left: auto;
 }
+
+.header {
+    display: flex;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header h3 {
+    flex: 1;
+}
+
 .title {
     margin-bottom: 20px;
     font-family: 'Permanent Marker', cursive;
     font-size: 50px;
     font-weight: bold;
+}
+
+.description {
+    margin-top: 20px;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.duties {
+    display: flex;
+    flex: 1;
+
 }
