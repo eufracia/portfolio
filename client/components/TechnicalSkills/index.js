@@ -4,9 +4,9 @@ import {render} from 'react-dom';
 import styles from './styles.css';
 
 const Skills = (props) => {
-  return <div style={style.skillsContainer}>
+  return <div className={styles.skillItems}>
     {props.skills.map((skill, i) => {
-      return <p key={i}>{skill}</p>
+      return <p className={styles.skillItem} key={i}>{skill}</p>
     })}
   </div>
 }
@@ -14,9 +14,9 @@ const Skills = (props) => {
 class TechnicalSkills extends React.Component {
   render(){
     return(
-      <section>
+      <section className={styles.container}>
         <h1 className={styles.title}>Technical Skills</h1>
-        <div className={styles.items}>
+        <div className={styles.skillsContainer}>
           <Skills skills={[
              "Microsoft Visual Studio 2013",
              "Android Development",

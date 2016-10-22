@@ -1,11 +1,32 @@
-.items{
-    line-height: 40px;
-    font-size: 20px;
-
+.container {
+    width: 1000px;
+    padding: 40px;
+    margin-right: auto;
+    margin-left: auto;
 }
+
+.skillsContainer {
+    display: flex;
+    flex: 1;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Work Sans', serif;
+    font-size: 18px;
+    line-height: 40px;
+}
+
 .title {
     margin-bottom: 20px;
     font-family: 'Permanent Marker', cursive;
     font-size: 50px;
     font-weight: bold;
+}
+
+.skillItems {
+    flex: 1;
+}
+
+.skillItem {
+    flex: 1;
+    height: 30px;
 }
