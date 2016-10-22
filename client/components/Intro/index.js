@@ -8,7 +8,7 @@ class Intro extends React.Component {
   render() {
     return(
       <section className={styles.container}>
-        <div>Logo</div>
+        <div className={styles.container}>Logo</div>
         <h1 className={styles.name}>Eufracia Marsella</h1>
         <p className={styles.description}>Hi! I'm an application and web developer based in Edmonton, Alberta.
         I'm passionate about learning new programming languages and build some
