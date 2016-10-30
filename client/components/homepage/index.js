@@ -1,10 +1,8 @@
-
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 
 import Intro from '../Intro';
-import Experience from '../Experience';
-import TechnicalSkills from '../TechnicalSkills';
+import Timeline from '../Timeline';
 import Projects from '../Projects';
 
 export default class Homepage extends Component {
@@ -23,13 +21,15 @@ export default class Homepage extends Component {
           {
             property: 'og:title',
             content: 'Golang Isomorphic React/Hot Reloadable/Redux/Css-Modules Starter Kit'
-          }
+          },
+          {
+            name: 'viewport',
+            content: 'width=device-width, initial-scale=1',
+          },
         ]} />
         <Intro />
-        <Experience />
-        <TechnicalSkills />
+        <Timeline />
         <Projects />
     </div>;
   }
-
 }
