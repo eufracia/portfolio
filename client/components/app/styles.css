@@ -1,17 +1,15 @@
-body {
-  background-color: #f7f7f7;
-  font-family: 'Work Sans', sans-serif;
-  &:before {
-    content: '';
-    height: 100%;
-    display: inline-block;
-    vertical-align: middle;
-  }
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
-:global(#app) {
-  display: inline-block;
-  vertical-align: middle;
-  padding: 0 px(100);
-  width: 99%;
+body {
+  background-color: #f7f7f7;
+  background-color: #ffffff;
+  font-family: 'Work Sans', sans-serif;
+  margin: 0;
+  padding: 0;
 }
+

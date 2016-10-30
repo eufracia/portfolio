@@ -1,0 +1,282 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 880px;
+    max-width: calc(100% - 80px);
+    min-height: 200px;
+    padding: 40px 0;
+    margin-bottom: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 40px;
+}
+
+.header h1 {
+    margin-bottom: 20px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 80px;
+    text-align: center;
+    background: -webkit-linear-gradient(50deg,#710284,#d6fffa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header p {
+    margin-top: 80px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.timeline {
+    width: 106%;
+    height: 4px;
+    background-color: #000;
+    border-radius: 2px;
+    position: relative;
+    background: linear-gradient(50deg,#f7a3dd,#d8d583);
+}
+
+.dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: #555;
+    top: -6px;
+    position: absolute;
+    background: linear-gradient(50deg,#a732ff,#f37182);
+}
+
+.dot1 {
+    left: 50px;
+}
+
+.dot2 {
+    left: 170px;
+}
+
+.dot3 {
+    left: 224px;
+}
+
+.dot4 {
+    left: 292px;
+}
+
+.dot5 {
+    left: 390px;
+}
+
+.dot6 {
+    left: 514px;
+}
+
+.dot7 {
+    left: 611px;
+}
+
+.dot8 {
+    left: 710px;
+}
+
+.dot9 {
+    left: 810px;
+}
+
+.dot10 {
+    left: 868px;
+}
+
+.line {
+    position: absolute;
+    bottom: 14px;
+    left: 6px;
+    width: 4px;
+    height: 32px;
+    background: linear-gradient(50deg,#cd3ede,#f54ff5);
+}
+
+.desc {
+    padding: 0 10px;
+    height: 38px;
+    position: absolute;
+    bottom: 100%;
+    border-radius: 5px;
+    background: linear-gradient(50deg,#f36a9a,#f37182);
+    color: #fff;
+    white-space: nowrap;
+    transform: translateX(-50%);
+}
+
+.year {
+    height: 38px;
+    position: absolute;
+    top: 20px;
+    left: 6px;
+    color: #dbcf8d;
+    white-space: nowrap;
+    transform: translateX(-50%);
+}
+
+.description {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+}
+
+@media all and (max-width: 500px) {
+
+    .header h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .header p {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    .container {
+        position: relative;
+        max-width: calc(100% - 80px);
+        min-height: 200px;
+        margin-bottom: 30%;
+    }
+
+    .timeline {
+        width: 4px;
+        height: 480px;
+        left: calc(50% - 2px);
+        border-radius: 2px;
+        background-color: #000;
+        background: linear-gradient(5#d8d583,0deg,#f7a3dd);
+        position: absolute;
+    }
+
+    .dot {
+        position: relative;
+        left: -6px;
+    }
+
+    .dot1 {
+        top: 40px;
+    }
+
+    .dot2 {
+        top: 80px;
+    }
+
+    .dot3 {
+        top: 100px;
+    }
+
+    .dot4 {
+        top: 120px;
+    }
+
+    .dot5 {
+        top: 140px;
+    }
+
+    .dot6 {
+        top: 160px;
+    }
+
+    .dot7 {
+        top: 240px;
+    }
+
+    .dot8 {
+        top: 260px;
+    }
+
+    .dot9 {
+        top: 280px;
+    }
+
+    .dot10 {
+        top: 300px;
+    }
+
+    .line {
+        position: absolute;
+    }
+
+    .dot:nth-child(even) .line {
+        position: relative;
+        left: 15px;
+        right: 8px;
+        bottom: -6px;
+        width: 32px;
+        height: 4px;
+    }
+
+    .dot:nth-child(odd) .line {
+        position: relative;
+        height: 4px;
+        width: 32px;
+        top: -6px;
+        left: -32px;
+        top: 6px;
+    }
+}
+
+@media all and (max-width: 425px) {
+
+    .name {
+        font-size: 60px;
+        height: 120px;
+    }
+
+    .title {
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    .description {
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    .jobPos {
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    .actionbar {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 375px) {
+
+    .name {
+        font-size: 52px;
+        height: 120px;
+    }
+
+    .title {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .description {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .jobPos {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .button {
+        width: 160px;
+        height: 46px;
+        margin: 30px 5px;
+    }
+}
+
