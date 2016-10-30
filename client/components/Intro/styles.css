@@ -1,6 +1,11 @@
 .container {
-    width: 600px;
-    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 570px;
+    max-width: calc(100% - 80px);
+    min-height: 100vh;
+    padding: 40px 0;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -13,10 +18,133 @@
     font-size: 90px;
     font-weight: bold;
     line-height: 80px;
+    background: -webkit-linear-gradient(50deg,#dd0ddd,#ed3535);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .description {
-    margin-top: 60px;
-    margin-bottom: 20px;
+    margin-top: 20px;
     font-size: 20px;
 }
+
+.jobPos {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.actionbar {
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    margin: 30px 5px;
+    border-radius: 3px;
+    border: 2px solid #cd3ede;
+    color: #cd3ede;
+}
+
+.invert {
+    color: #fff;
+    background-color: #cd3ede;
+    background: linear-gradient(50deg,#f54ff5,#f37575);
+    border: none;
+    border-radius: 3px;
+}
+
+@media all and (max-width: 500px) {
+
+    .name {
+        font-size: 70px;
+        line-height: 60px;
+    }
+
+    .title {
+        font-size: 20px;
+        line-height: 50px;
+    }
+
+    .description {
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .jobPos {
+        font-size: 20px;
+        line-height: 50px;
+    }
+}
+
+@media all and (max-width: 425px) {
+
+    .name {
+        font-size: 60px;
+        height: 120px;
+    }
+
+    .title {
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    .description {
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    .jobPos {
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    .actionbar {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 375px) {
+
+    .name {
+        font-size: 52px;
+        height: 120px;
+    }
+
+    .title {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .description {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .jobPos {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .button {
+        width: 160px;
+        height: 46px;
+        margin: 30px 5px;
+    }
+}
+
