@@ -35,8 +35,6 @@ class TechnicalSkills extends React.Component {
             "Bootstrap",
             "LINQ"]} />
           <Skills skills={[
-            "C# Entity Framework Code First",
-            "C# Entity Framework 5",
             ".NET Framework",
             "jQuery",
             "React",
