@@ -209,6 +209,8 @@
         left: 40px;
         top: -18px;
         padding: 0 10px;
+        background: linear-gradient(50deg,#f36a9a,#f37182);
+        color: #fff;
     }
 
     .dot:nth-child(odd) .line .desc {
