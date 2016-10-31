@@ -31,7 +31,7 @@
 }
 
 .timeline {
-    width: 106%;
+    width: 100%;
     height: 4px;
     background-color: #000;
     border-radius: 2px;
@@ -78,11 +78,11 @@
 }
 
 .dot8 {
-    left: 710px;
+    left: 740px;
 }
 
 .dot9 {
-    left: 810px;
+    left: 800px;
 }
 
 .dot10 {
@@ -108,6 +108,7 @@
     color: #fff;
     white-space: nowrap;
     transform: translateX(-50%);
+    font-weight: 500;
 }
 
 .year {
@@ -126,7 +127,7 @@
     font-size: 10px;
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 1000px) {
 
     .header h1 {
         font-size: 50px;
@@ -156,7 +157,6 @@
     }
 
     .dot {
-        position: relative;
         left: -6px;
     }
 
@@ -169,35 +169,35 @@
     }
 
     .dot3 {
-        top: 120px;
+        top: 150px;
     }
 
     .dot4 {
-        top: 140px;
+        top: 190px;
     }
 
     .dot5 {
-        top: 160px;
+        top: 230px;
     }
 
     .dot6 {
-        top: 180px;
+        top: 290px;
     }
 
     .dot7 {
-        top: 200px;
+        top: 340px;
     }
 
     .dot8 {
-        top: 260px;
+        top: 400px;
     }
 
     .dot9 {
-        top: 280px;
+        top: 430px;
     }
 
     .dot10 {
-        top: 300px;
+        top: 470px;
     }
 
     .line {
@@ -205,8 +205,8 @@
     }
 
     .dot:nth-child(even) .line .desc {
-        position: relative;
-        left: 40px;
+        left: 100%;
+        transform: translateX(0px);
         top: -18px;
         padding: 0 10px;
         background: linear-gradient(50deg,#f36a9a,#f37182);
@@ -214,28 +214,27 @@
     }
 
     .dot:nth-child(odd) .line .desc {
-        position: relative;
-        right: 40px;
+        left: initial;
+        right: 100%;
+        transform: translateX(0px);
         top: -18px;
         padding: 0 10px;
     }
 
     .dot:nth-child(even) .line {
-        position: relative;
-        left: 15px;
-        right: 8px;
-        bottom: -6px;
         width: 32px;
         height: 4px;
+        top: 6px;
+        right: initial;
+        left: 100%;
     }
 
     .dot:nth-child(odd) .line {
-        position: relative;
         height: 4px;
         width: 32px;
-        top: -6px;
-        left: -32px;
         top: 6px;
+        left: initial;
+        right: 100%;
     }
 
 

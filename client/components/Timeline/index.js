@@ -29,9 +29,8 @@ class Timeline extends React.Component {
            <Event num={5} desc="Javascript" />
            <Event num={6} desc="HTML5 & CSS3" />
            <Event num={7} desc="iOS" />
-           <Event num={8} desc="Self Learning" year="2016" />
-           <Event num={9} desc="React" />
-           <Event num={10} desc="Go" />
+           <Event num={8} desc="React" year="2016" />
+           <Event num={9} desc="Go" />
          </div>
         </div>
       </section>
