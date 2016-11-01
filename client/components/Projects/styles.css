@@ -34,7 +34,16 @@
     -webkit-text-fill-color: transparent;
 }
 
-.description {
+.projContainer {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    max-width: 50%;
+    min-height: 500px;
+    background-color: #D3D3D3;
+}
+
+.desc {
     margin-top: 20px;
     font-size: 19px;
     line-height: 30px;
@@ -129,3 +138,15 @@
     }
 }
 
+            /*<div>
+              <Proj
+                projTitle="Capstone Project"
+                projPeriod="January - April 2016"
+                projDesc={`Capstone Project is a mandatory project for the last semester students in Digital Media Information and Technology
+                  which last 4 months long, divided in 3 groups with different projects for each. I and my team, AppBright Solution,
+                  was assigned to work in a Grading Scale Conversion Application for the NAIT Registrar Office.
+                  We were using Microsoft Visual Studio Software, ASP.NET Entity Framework MVC 5, C# for creating a web application.
+                  Also, we combined them with HTML, CSS and Bootstrap for the front end. For the design and documentation,
+                  we used Agile methodology, Microsoft Visio, as well as Microsoft Word. For the deployment, we use
+                  Microsoft server that is hosted only internally in campus. As the result of our work, we achieved A+ as our final mark. `} />
+            </div>*/

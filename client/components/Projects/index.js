@@ -22,23 +22,26 @@ const Proj= (props) => {
   </div>
 }
 
+const Works = (props) => <div className={`${styles.project}`}>
+  { props.img && <div className={styles.image}>
+    <div className={styles.desc}>{props.desc}</div>
+    <div className={styles.year}>{props.year}</div>
+  </div> }
+</div>
+
 class Projects extends React.Component {
   render() {
     return(
         <section className={styles.container}>
           <h1 className={styles.title}>Projects</h1>
-            <div>
-              <Proj
-                projTitle="Capstone Project"
-                projPeriod="January - April 2016"
-                projDesc={`Capstone Project is a mandatory project for the last semester students in Digital Media Information and Technology
-                  which last 4 months long, divided in 3 groups with different projects for each. I and my team, AppBright Solution,
-                  was assigned to work in a Grading Scale Conversion Application for the NAIT Registrar Office.
-                  We were using Microsoft Visual Studio Software, ASP.NET Entity Framework MVC 5, C# for creating a web application.
-                  Also, we combined them with HTML, CSS and Bootstrap for the front end. For the design and documentation,
-                  we used Agile methodology, Microsoft Visio, as well as Microsoft Word. For the deployment, we use
-                  Microsoft server that is hosted only internally in campus. As the result of our work, we achieved A+ as our final mark. `} />
+          <div className={styles.projContainer}>
+            <div className={styles.work}>
+              <Works desc="Capstone Project" year="January-April 2016"/>
+              <div className={styles.workProject}>
+                <Works desc="Capstone Project" year="January-April 2016"/>
+              </div>
             </div>
+          </div>
         </section>
     )
   }
