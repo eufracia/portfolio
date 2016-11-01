@@ -104,7 +104,7 @@
     position: absolute;
     bottom: 100%;
     border-radius: 5px;
-    background: linear-gradient(50deg,#a732ff,#f37182);
+    background: linear-gradient(50deg,#cd3ede,#cd3ede);
     color: #fff;
     white-space: nowrap;
     transform: translateX(-50%);
@@ -117,6 +117,7 @@
     top: 20px;
     left: 6px;
     color: #dbcf8d;
+    font-weight: 600;
     white-space: nowrap;
     transform: translateX(-50%);
 }
@@ -225,7 +226,6 @@
         transform: translateX(0px);
         top: -18px;
         padding: 0 10px;
-        background: linear-gradient(50deg,#a732ff,#f37182);
         color: #fff;
     }
 
