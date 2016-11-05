@@ -3,43 +3,30 @@ import {render} from 'react-dom';
 
 import styles from './styles.css';
 
-const Proj= (props) => {
-  return <div>
-          <div className={styles.header}>
-             <h3>{props.projTitle}</h3>
-             <p>{props.projPeriod}</p>
-          </div>
-          <div>
-            <div className={styles.description}>
-              <p>{props.projDesc}</p>
-            </div>
-          </div>
-          <div>
-            <div>
-              <p className={styles.duties}>{props.projDuties}</p>
-            </div>
-          </div>
-  </div>
-}
-
 const Works = (props) => <div className={`${styles.project}`}>
-  { props.img && <div className={styles.image}>
-    <div className={styles.desc}>{props.desc}</div>
-    <div className={styles.year}>{props.year}</div>
-  </div> }
+  <div className={styles.image} style={props.image ? {
+    backgroundImage: `url(${props.image})`,
+    backgroundSize: 'cover',
+  } : {}} />
+  <div className={styles.desc}>{props.desc}</div>
+  <div className={styles.year}>{props.year}</div>
 </div>
 
 class Projects extends React.Component {
   render() {
     return(
-        <section className={styles.container}>
-          <h1 className={styles.title}>Projects</h1>
-          <div className={styles.projContainer}>
-            <div className={styles.work}>
-              <Works desc="Capstone Project" year="January-April 2016"/>
-              <div className={styles.workProject}>
-                <Works desc="Capstone Project" year="January-April 2016"/>
-              </div>
+        <section className={styles.section}>
+          <div className={styles.header}>
+            <h1>Projects</h1>
+            <p>Design and create web and apps with a thoughtful mind.</p>
+            <p>My projects below designed  with the combination of programming languages, databases and frameworks that I listed
+            on my timeline.</p>
+          </div>
+          <div className={styles.container}>
+            <div className={styles.row}>
+              <Works desc="NAIT Grading Scale Conversion" image="http://eufracia.me/images/asp-net-project.png" year="2016" />
+              <Works desc="Penny Juice - Website Redesign" image="" year="2016" />
+              <Works desc="Money Smart" image="" year="2016" />
             </div>
           </div>
         </section>
