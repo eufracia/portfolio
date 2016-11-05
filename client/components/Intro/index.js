@@ -3,7 +3,18 @@ import {render} from 'react-dom';
 
 import styles from './styles.css';
 
+const defaultEmailSubject = 'Hello! Let\'s Chat :)';
+
 class Intro extends React.Component {
+
+  onEmailClick() {
+    location.href = `mailto:ziporalicia@gmail.com?subject=${defaultEmailSubject}`
+  }
+
+  onResumeClick() {
+    location.href = `https://dl.dropboxusercontent.com/s/n6nxnde4mg3o9fg/resume.pdf?dl=0`
+  }
+
   render() {
     return(
       <section className={styles.container}>
@@ -13,8 +24,8 @@ class Intro extends React.Component {
         Friendly, easy going, and love to meet new people. <br /> </p>
         <span className={styles.jobPos}>OPEN for FREELANCE and FULL-TIME WORK. </span>
         <div className={styles.actionbar}>
-          <button className={styles.button}>Resume</button>
-          <button className={`${styles.button} ${styles.invert}`}>Let's Chat</button>
+          <button className={styles.button} onClick={::this.onResumeClick}>Resume</button>
+          <button className={`${styles.button} ${styles.invert}`} onClick={::this.onEmailClick}>Let's Chat</button>
         </div>
       </section>
     )
