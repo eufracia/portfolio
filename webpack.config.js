@@ -6,7 +6,8 @@ var functions = require('postcss-functions');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 var postCssLoader = [
-  'css-loader?module',
+  'css-loader?modules',
+  '&importLoaders=1',
   '&localIdentName=[name]__[local]___[hash:base64:5]',
   '&disableStructuralMinification',
   '!postcss-loader'

@@ -14,7 +14,7 @@ class Timeline extends React.Component {
   render() {
     return(
       <section>
-        <a name="timeline"></a>
+        <a name="timeline" />
         <div className={styles.container}>
           <div className={styles.header}>
            <h1>Timeline</h1>

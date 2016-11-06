@@ -33,7 +33,7 @@ $(BUNDLE): $(APP)
 	@$(NODE_BIN)/webpack --progress --colors --bail
 
 $(TARGET): $(BUNDLE) $(BINDATA)
-	@go build -ldflags '$(LDFLAGS)' -o $@ $(IMPORT_PATH)/server
+	@go build -a -installsuffix cgo -ldflags '$(LDFLAGS)' -o $@ $(IMPORT_PATH)/server
 
 kill:
 	@kill `cat $(PID)` || true
