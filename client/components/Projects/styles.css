@@ -44,7 +44,7 @@
     flex-direction: column;
     max-width: calc(100% - 80px);
     width: 880px;
-    margin-top: 100px;
+    margin-top: 30px;
     margin-right: auto;
     margin-left: auto;
     font-size: 20px;
@@ -55,12 +55,18 @@
     flex-direction: row;
 }
 
+.project_01 {
+    background-image: url('./Image/asp-net-project.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .project {
     flex: 1;
     flex-direction: column;
     display: flex;
     margin:5px;
-    height: 290px;
+    height: 390px;
 }
 
 .image {

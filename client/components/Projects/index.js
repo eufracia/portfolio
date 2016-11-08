@@ -4,10 +4,7 @@ import {render} from 'react-dom';
 import styles from './styles.css';
 
 const Works = (props) => <div className={`${styles.project}`}>
-  <div className={styles.image} style={props.image ? {
-    backgroundImage: `url(${props.image})`,
-    backgroundSize: 'cover',
-  } : {}} />
+  <div className={`${styles.image} ${props.style}`} />
   <div className={styles.desc}>{props.desc}</div>
   <div className={styles.year}>{props.year}</div>
 </div>
@@ -32,9 +29,7 @@ class Projects extends React.Component {
           </div>
           <div className={styles.container}>
             <div className={styles.row}>
-              <Works desc="Grading Scale Conversion" image="http://eufracia.me/images/asp-net-project.png" year="2016" />
-              <Works desc="Penny Juice" image="" year="2016" />
-              <Works desc="Money Smart" image="" year="2016" />
+              <Works desc="Grading Scale Conversion" year="2016" style={styles.project_01} />
             </div>
             <div className={styles.contact}>
              <SocMed socImage="" />
