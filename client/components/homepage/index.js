@@ -18,11 +18,11 @@ static onEnter({store, nextState, replaceState, callback}) {
 render() {
   return <div>
     <Helmet
-      title='Home page'
+      title='Eufracia'
       meta={[
         {
           property: 'og:title',
-          content: 'Golang Isomorphic React/Hot Reloadable/Redux/Css-Modules Starter Kit'
+          content: 'Application & Web coder in Edmonton, Alberta.'
         },
           {
             name: 'viewport',
