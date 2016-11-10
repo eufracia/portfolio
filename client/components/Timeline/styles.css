@@ -25,6 +25,7 @@
 .header p {
     line-height: 32px;
     width: 600px;
+    max-width: 100%;
     font-size: 20px;
     text-align:left;
     color: #f37575;
@@ -340,7 +341,7 @@
     .container {
         position: relative;
         max-width: calc(100% - 80px);
-        min-height: 200px;
+        min-height: 333px;
         margin-bottom: 35%;
     }
 

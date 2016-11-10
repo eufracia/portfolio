@@ -1,9 +1,14 @@
 
 .root {
     display: flex;
-    margin: 80px 0 30px 0;
+    max-width:calc(100% - 80px);
+    margin: 80px auto 30px auto;
     font-size: 14px;
     text-align: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.copyright {
+    margin-top: 35px;
 }

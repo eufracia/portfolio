@@ -6,5 +6,5 @@ import ActionBar from '../ActionBar';
 
 export default () => <div className={styles.root}>
   <ActionBar />
-  © 2016 EUFRACIA. All rights reserved.
+  <p className={styles.copyright}>© 2016 EUFRACIA. All rights reserved.</p>
 </div>
