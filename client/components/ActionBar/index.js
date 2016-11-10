@@ -9,9 +9,8 @@ const onEmailClick = () => {
 }
 
 const onResumeClick = () => {
-    location.href = `https://dl.dropboxusercontent.com/s/woo53hvjosggnit/Eufracia%20Marsella%20-%20portfolioResume.pdf?dl=0`
+    location.href = `https://dl.dropboxusercontent.com/s/p7j5ino45806q1t/Eufracia%20Marsella%20-%20Portfolio.pdf?dl=0`
 }
-
 
 export default () => <div className={styles.actionbar}>
   <button className={styles.button} onClick={onResumeClick}>Resume</button>
