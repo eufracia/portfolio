@@ -24,9 +24,21 @@
 }
 
 .title {
-    margin-top: 20px;
     font-size: 20px;
     font-weight: 500;
+    width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 40px;
+}
+
+.place {
+    font-size: 20px;
+    font-weight: 500;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 40px;
 }
 
 .description {

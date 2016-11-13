@@ -10,10 +10,11 @@ class Intro extends React.Component {
     return(
       <section className={styles.container}>
         <h1 className={styles.name}>Eufracia Marsella</h1>
-        <span className={styles.title}>APPLICATION & WEB CODER in EDMONTON, ALBERTA. </span>
-        <p className={styles.description}>Front and Back End Developer who is passionate to make simple, useful apps and websites.
-        Friendly, easy going, and love to meet new people. <br /> </p>
-        <span className={styles.jobPos}>OPEN for FREELANCE and FULL-TIME WORK. </span>
+        <span className={styles.title}>APPLICATION & WEB CODER</span>
+        <span className={styles.place}>in Edmonton, Alberta.</span>
+        <p className={styles.description}>I am a Front and Back End Developer who is passionate to create simple, useful apps and websites.
+        I'm friendly, easy going, and love to meet new people. <br /> </p>
+        <span className={styles.jobPos}>Available for FREELANCE and FULL-TIME work. </span>
         <ActionBar />
       </section>
     )
