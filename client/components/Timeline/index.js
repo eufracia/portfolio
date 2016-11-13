@@ -18,11 +18,12 @@ class Timeline extends React.Component {
         <div className={styles.container}>
           <div className={styles.header}>
            <h1>Timeline</h1>
-           <p>Different journeys in my life constantly developed and growth. </p>
-           <p>My curiousity, passion and willingness to know about how thing works for computer, started when I chose
-           a program for my post-secondary. I decided to take Digital Media Information and Technology at NAIT,
-           specialized in application Development. I have been having fun learn, build and develop some websites and applications
-           using various programming languages, databases and frameworks as listed below.</p>
+           <p>Different journeys in my life have helped me to develop and grow. </p>
+           <p>My curiousity, passion and willingness to learn started, started when
+           I began my my post-secondary education. I decided to take Digital Media
+           Information and Technology at NAIT,specializing in Application Development.
+           I have been enjoyed learning, building and developing websites and applications
+           using various programming languages, databases and frameworks as outlined below.</p>
           </div>
         </div>
         <div className={styles.container}>

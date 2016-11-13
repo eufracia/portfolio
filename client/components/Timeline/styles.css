@@ -17,7 +17,7 @@
     line-height: 80px;
     text-align: center;
     padding: 10px;
-    background: -webkit-linear-gradient(50deg,#ff51e0,#ceb634);
+    background: -webkit-linear-gradient(50deg,#c316c3,#ffdd2a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -46,10 +46,9 @@
 .timeline {
     width: 100%;
     height: 4px;
-    background-color: #000;
+    background-color: #e87fbe;
     border-radius: 2px;
     position: relative;
-    background-color: #eee;
 }
 
 .dot {
@@ -109,7 +108,7 @@
     left: 4px;
     width: 4px;
     height: 32px;
-    background-color: #fdf0f0;
+    background-color: #ec8e8e;
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
 }
@@ -120,12 +119,12 @@
     position: absolute;
     bottom: 100%;
     border-radius: 5px;
-    background-color: #fdf0f0;
-    color: #f37575;
+    background-color: #ffb3a2;
+    color: #ffffff;
     white-space: nowrap;
     transform: translateX(-50%);
     margin-left: 2px;
-    font-weight: 500;
+    font-weight: 800;
     font-size: 15px;
 }
 
@@ -134,8 +133,8 @@
     position: absolute;
     top: 20px;
     left: 6px;
-    color: #dbcf8d;
-    font-weight: 600;
+    color: #d4bf47;
+    font-weight: 800;
     white-space: nowrap;
     transform: translateX(-50%);
     font-size: 14px;
