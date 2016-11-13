@@ -8,7 +8,7 @@ class Navigation extends React.Component {
     return (
       <ul className={styles.navbar}>
          <li><a href="#timeline">Timeline</a></li>
-         <li><a href="#projects">Project</a></li>
+         <li><a href="#projects">Projects</a></li>
       </ul>
     );
   }
