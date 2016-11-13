@@ -23,9 +23,9 @@ class Projects extends React.Component {
           <a name="projects" />
           <div className={styles.header}>
             <h1>Projects</h1>
-            <p>Design and create web and apps with a thoughtful mind.</p>
-            <p>My projects below designed  with the combination of programming languages, databases and frameworks that I listed
-            on my timeline.</p>
+            <p>To design and create websites and apps with a thoughtful approach.</p>
+            <p>My projects below were designed with a combination of programming languages,
+            databases and frameworks as mentioned in my timeline.</p>
           </div>
           <div className={styles.container}>
             <div className={styles.row}>
