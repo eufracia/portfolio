@@ -19,9 +19,9 @@ class Timeline extends React.Component {
           <div className={styles.header}>
            <h1>Timeline</h1>
            <p>Different journeys in my life have helped me to develop and grow. </p>
-           <p>My curiousity, passion and willingness to learn started, started when
+           <p>My curiousity, passion and willingness to learn started when
            I began my my post-secondary education. I decided to take Digital Media
-           Information and Technology at NAIT,specializing in Application Development.
+           Information and Technology at NAIT, specializing in Application Development.
            I have been enjoyed learning, building and developing websites and applications
            using various programming languages, databases and frameworks as outlined below.</p>
           </div>
