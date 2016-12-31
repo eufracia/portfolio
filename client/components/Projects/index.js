@@ -1,19 +1,35 @@
 import React from 'react';
 import {render} from 'react-dom';
 
+import ImageZoom from 'react-medium-image-zoom'
+
+import gradingScaleImage from './images/gradingscale01.png';
+import todoImage from './images/todo01.png';
+
 import styles from './styles.css';
 
 const Works = (props) => <div className={`${styles.project}`}>
-  <div className={`${styles.image} ${props.style}`} />
-  <div className={styles.desc}>{props.desc}</div>
+  <ImageZoom
+    image={{
+      src: props.image,
+      alt: props.desc,
+      className: styles.image,
+      style: {
+        width: '100%',
+      }
+    }}
+    zoomImage={{
+      src: props.image,
+      alt: props.desc,
+    }}
+  />
+  <div className={styles.desc}>
+    { props.link
+      ? <a target="__blank" href={props.link}>{props.desc}</a>
+      : props.desc
+    }
+  </div>
   <div className={styles.year}>{props.year}</div>
-</div>
-
-const SocMed = (props) => < div className={`${styles.socmed}`}>
-  <div className={styles.socImage} style={props.socImage ? {
-    backgroundImage: `url(${props.socImage})`,
-      backgroundSize: 'cover',
-  } : {}} />
 </div>
 
 class Projects extends React.Component {
@@ -29,10 +45,10 @@ class Projects extends React.Component {
           </div>
           <div className={styles.container}>
             <div className={styles.row}>
-              <Works desc="Grading Scale Conversion" year="2016" style={styles.project_01} />
+              <Works image={gradingScaleImage} desc="Grading Scale Conversion" year="2016" />
             </div>
-            <div className={styles.contact}>
-             <SocMed socImage="" />
+            <div className={styles.row}>
+              <Works image={todoImage} desc="Todo - Ruby on Rails" year="2016" link="https://todo.eufracia.me" />
             </div>
           </div>
         </section>

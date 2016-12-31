@@ -51,15 +51,11 @@
 }
 
 .row {
-    display: flex;
-    flex-direction: row;
     max-width: 100%;
 }
 
-.project_01 {
-    background-image: url('./Image/asp-net-project.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+.row + .row {
+    margin-top: 10px;
 }
 
 .project {
@@ -70,7 +66,6 @@
 }
 
 .image {
-    flex: 1;
     background-color: #f9f0f0;
     border-radius: 2px;
 }
@@ -87,14 +82,12 @@
     font-size: 16px;
     text-align: center;
     color: #f37575;
+    line-height: initial;
 }
 
 @media all and (max-width: 1000px) {
 
     .row {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         margin-right: auto;
         margin-left: auto;
         width: 380px;
@@ -166,9 +159,6 @@
     }
 
     .row {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         margin-right: auto;
         margin-left: auto;
         width: 340px;
@@ -203,9 +193,6 @@
     }
 
     .row {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         margin-right: auto;
         margin-left: auto;
         width: 300px;
