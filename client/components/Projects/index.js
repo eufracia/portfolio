@@ -45,7 +45,7 @@ class Projects extends React.Component {
           </div>
           <div className={styles.container}>
             <div className={styles.row}>
-              <Works image={gradingScaleImage} desc="Grading Scale Conversion" year="2016" />
+              <Works image={gradingScaleImage} desc="Grading Scale Conversion" year="2016" link="https://www.youtube.com/watch?v=gSlk8bn1p0o" />
             </div>
             <div className={styles.row}>
               <Works image={todoImage} desc="Todo - Ruby on Rails" year="2016" link="https://todo.eufracia.me" />
