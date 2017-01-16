@@ -62,7 +62,7 @@
     flex: 1;
     flex-direction: column;
     display: flex;
-    height: 390px;
+    padding-bottom: 20px;
 }
 
 .image {
