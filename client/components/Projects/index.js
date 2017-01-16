@@ -5,6 +5,7 @@ import ImageZoom from 'react-medium-image-zoom'
 
 import gradingScaleImage from './images/gradingscale01.png';
 import todoImage from './images/todo01.png';
+import calendarImage from './images/calendar.jpg';
 
 import styles from './styles.css';
 
@@ -49,6 +50,9 @@ class Projects extends React.Component {
             </div>
             <div className={styles.row}>
               <Works image={todoImage} desc="Todo - Ruby on Rails" year="2016" link="https://todo.eufracia.me" />
+            </div>
+            <div className={styles.row}>
+              <Works image={calendarImage} desc="Calendar - Inferno and Redux" year="2017" link="https://calendar.eufracia.me" />
             </div>
           </div>
         </section>
