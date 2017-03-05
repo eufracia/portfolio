@@ -9,7 +9,7 @@ const onEmailClick = () => {
 }
 
 const onResumeClick = () => {
-    location.href = `https://dl.dropboxusercontent.com/s/p7j5ino45806q1t/Eufracia%20Marsella%20-%20Portfolio.pdf?dl=0`
+    location.href = `https://www.dropbox.com/s/hiy6yrrrbk8aa8x/Eufracia%20Marsella%20-%20Portfolio.pdf?dl=1`
 }
 
 export default () => <div className={styles.actionbar}>
